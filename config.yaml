@@ -1,0 +1,6 @@
+redis:
+  host: redis-14370.c282.east-us-mz.azure.cloud.redislabs.com
+  db: 0
+  user: default
+  password: LtyWY3faI3zz6oOQuvppnn2NeCIkqhWR
+  port: 14370
