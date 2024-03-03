@@ -40,7 +40,9 @@ class Process:
          """
         tracknames = []
         for i in range(50):
-            tracknames.append(r.json().get('playlist:tracks:track{idx}:items:track:name'.format(idx=i)))
+            json_data = r.json().get('playlist:tracks:track{idx}'.format(idx=i))
+            data = json.loads(json_data)
+            tracknames.append(data['items'][0]['track']['name'])
         return tracknames
 
     def plot_explicits(self):
