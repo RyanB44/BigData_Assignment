@@ -10,7 +10,7 @@ class Process:
 
     def __init__(self):
         self.popularity_vs_duration()
-        self.get_only_track_names()
+        print(self.get_only_track_names())
         self.plot_explicits()
 
     def popularity_vs_duration(self):
